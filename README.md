@@ -2,7 +2,7 @@
 
 Hello
 
-Main class: src/main/java/com/example/supermarket/SupermarketShop.java
+Main class: [SupermarketShop.java](src/main/java/com/example/supermarket/SupermarketShop.java)
 
 When run in console:
 
