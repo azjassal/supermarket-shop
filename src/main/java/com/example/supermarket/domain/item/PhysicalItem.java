@@ -36,4 +36,12 @@ public class PhysicalItem implements Item {
         return Objects.hash(price, label);
     }
 
+    @Override
+    public String toString() {
+        return "PhysicalItem{" +
+                "price=" + price +
+                ", label='" + label + '\'' +
+                '}';
+    }
+
 }

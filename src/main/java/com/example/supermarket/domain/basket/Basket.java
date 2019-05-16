@@ -30,4 +30,11 @@ public class Basket {
         return items.stream().map(i -> i.getPrice().getAmount()).reduce(BigDecimal.ZERO, BigDecimal::add).setScale(2, RoundingMode.CEILING);
     }
 
+    @Override
+    public String toString() {
+        return "Basket{" +
+                "items=" + items +
+                '}';
+    }
+
 }

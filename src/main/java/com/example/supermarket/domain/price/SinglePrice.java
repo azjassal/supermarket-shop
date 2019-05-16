@@ -28,4 +28,11 @@ public class SinglePrice implements Price {
         return Objects.hash(amount);
     }
 
+    @Override
+    public String toString() {
+        return "SinglePrice{" +
+                "amount=" + amount +
+                '}';
+    }
+
 }

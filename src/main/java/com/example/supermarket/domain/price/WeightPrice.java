@@ -32,4 +32,12 @@ public class WeightPrice implements Price {
         return Objects.hash(weight, amount);
     }
 
+    @Override
+    public String toString() {
+        return "WeightPrice{" +
+                "weight=" + weight + " @ " + amount +
+                ", amount=" + getAmount() +
+                '}';
+    }
+
 }
