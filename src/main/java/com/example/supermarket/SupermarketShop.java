@@ -31,11 +31,9 @@ public class SupermarketShop {
         // Lets checkout
         CheckoutService checkoutService = new CheckoutService(discountService);
 
-        System.out.println(basket);
         System.out.println("Sub-total: " + basket.getSubTotal());
         System.out.println("Total savings: " + checkoutService.getTotalSavings(basket));
         System.out.println("Total to pay: " + checkoutService.getTotalToPay(basket));
-
     }
 
 }
