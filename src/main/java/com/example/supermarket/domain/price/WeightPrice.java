@@ -1,6 +1,7 @@
 package com.example.supermarket.domain.price;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
 
 public class WeightPrice implements Price {
@@ -14,7 +15,7 @@ public class WeightPrice implements Price {
     }
 
     public BigDecimal getAmount() {
-        return weight.multiply(amount);
+        return weight.multiply(amount).setScale(2, RoundingMode.CEILING);
     }
 
     @Override
